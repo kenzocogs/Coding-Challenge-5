@@ -26,3 +26,10 @@ let inventory = [
 },
 
 ];
+
+// Task 2: Create an Orders Array of Orders Objects
+
+let orders = []
+
+// NOTE: order objects will be added in Task 3
+
