@@ -74,7 +74,7 @@ console.log (placeOrder("Misty", [
 // should log success msg
 
 
-// Task 4: Create a Function to Calculate Total for an Order
+// Task 4: Create a Function to Calculate Total for an Order (SKIPPED)
 
 //function calculateOrderTotal (itemsOrdered) {
    // return itemsOrdered.products.reduce ((sum, item) => {
@@ -82,7 +82,8 @@ console.log (placeOrder("Misty", [
 //})
 //}
 //console.log (calculateOrderTotal ())
-// NA: >>>> skipped this one <<<<<<
+
+// NA: >>>> skipped Task 4 <<<<<<
 
 // Task 5: Create a Function to Mark an Order as Completed
 
@@ -101,4 +102,16 @@ console.log (`Successfully completed ${name}'s order.`)
 
 console.log(completeOrder(`Misty`))
 // Should log success msg
+
+// Task 6: Create a Function to Check Pending Orders
+
+function checkPendingOrders () {
+console.log(`Orders Currently Pending:`)
+let pending = orders.forEach (order => order.status === `pending`)
+
+console.log(pending)
+
+}
+
+console.log (checkPendingOrders())
 
