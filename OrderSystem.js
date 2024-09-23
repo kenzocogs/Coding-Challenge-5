@@ -52,6 +52,7 @@ const product = inventory.find (product => product.name === itemsOrdered.name);
 itemsOrdered.forEach(item => {if (product)
     item.quantity -= inventory.quantity;
 });
+// now adding to the empty orders array
 console.log (`Successfully placed an order for ${name}.`)
 orders.push ({
     customer: name,
@@ -67,11 +68,19 @@ console.log (placeOrder("Ash", [
 // should log name based error msg 
 
 console.log (placeOrder("Misty", [
-    {name:'Americano', quantity: 34},
+    {name:'Americano', quantity: 6},
     {name:'ColdBrew', quantity: 3}
 ]))
 // should log success msg
 
 
+// Task 4: Create a Function to Calculate Total for an Order
 
+function calculateOrderTotal (itemsOrdered) {
+    return itemsOrdered.products.reduce ((sum, item) => {
+    
+})
+}
+console.log (calculateOrderTotal ())
+// NA: skipped this one 
 
