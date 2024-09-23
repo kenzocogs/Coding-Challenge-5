@@ -76,11 +76,29 @@ console.log (placeOrder("Misty", [
 
 // Task 4: Create a Function to Calculate Total for an Order
 
-function calculateOrderTotal (itemsOrdered) {
-    return itemsOrdered.products.reduce ((sum, item) => {
+//function calculateOrderTotal (itemsOrdered) {
+   // return itemsOrdered.products.reduce ((sum, item) => {
     
-})
+//})
+//}
+//console.log (calculateOrderTotal ())
+// NA: >>>> skipped this one <<<<<<
+
+// Task 5: Create a Function to Mark an Order as Completed
+
+function completeOrder (name) {
+let customerOrder = orders.find (order => order.name === name)
+// testing if name is in orders array
+if (customerOrder) {
+    console.log (`ERROR: CUSTOMER NOT FOUND`);
+    return;
 }
-console.log (calculateOrderTotal ())
-// NA: skipped this one 
+// changing status to completed
+orders.status = 'Completed'
+console.log (`Successfully completed ${name}'s order.`)
+
+}
+
+console.log(completeOrder(`Misty`))
+// Should log success msg
 
